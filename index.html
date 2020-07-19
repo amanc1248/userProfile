@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS stylesheet -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- THE BOOTSTRAP CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- BOOTSTRAP JQUERY -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- 1) Navbar Division, for creating navbar -->
+      <div class="col-lg-2  theNavbar bg-dark">
+        <nav class="navbar navbar-dark bg-dark ">
+          <ul class="navbar-nav">
+            <div class="row">
+
+              <!-- list for manage my account tab -->
+
+              <div class="col-lg-12 col-md-4 col-4">
+                <li class="nav-item active ">
+                  <a class="nav-link maintab dropdown-toggle myMenu" href="#manageMyAccountMenu" data-toggle="collapse">Manage Account</a>
+                  <ul class="collapse" id="manageMyAccountMenu">
+                    <li class="nav-item active"><a href="#" class="nav-link subtab">My Profile</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link subtab">Address Book</a></li>
+                    <li class="nav-item active"><a class="nav-link subtab" href="#">Payment Options</a></li>
+                  </ul>
+                </li>
+              </div>
+
+
+              <!-- for My orders tab -->
+              <div class="col-lg-12 col-md-4 col-4">
+                <li class="nav-item active ">
+                  <a class=" nav-link dropdown-toggle myMenu" href="#myOrdersMenu" data-toggle="collapse">My Orders</a>
+                  <ul class="collapse" id="myOrdersMenu">
+                    <li class="nav-item active"><a class="nav-link subtab" href="#">Returns</a></li>
+                    <li class="nav-item active"><a class="nav-link subtab" href="#">Cancellations</a></li>
+                  </ul>
+                </li>
+              </div>
+
+              <!-- for review -->
+              <div class="col-lg-12 col-md-4 col-4">
+                <li class="nav-item active"><a class="nav-link subtab" href="#">My Reviews</a></li>
+              </div>
+
+            </div>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- 2) User Information Division, for storing user information -->
+      <div class="col-lg-10 ">
+        <div class="heading">
+          <h4>My Profile</h4>
+        </div>
+        <div class="col-12 userInformationContainer">
+
+          <!-- 2.1) first row for (full name, email & mobile phone) -->
+          <div class="row">
+            <!-- Full Name -->
+            <div class="col-lg-4 col-md-4">
+              <label for="fullName" class="labelForUserProfile ">Full Name</label>
+              <input type="text" name="fullName" class="inputColumnUserProfile" value="Aman Chaudhary" readonly>
+            </div>
+            <!-- Email Address -->
+            <div class="col-lg-4 col-md-4">
+              <label for="emailAddress" class="labelForUserProfile ">Email Address | <a href="#">Change</a> </label>
+              <input type="email" name="emailAddress" class="inputColumnUserProfile" value="caman374@gmail.com" readonly>
+            </div>
+            <!-- Mobile Phone -->
+            <div class="col-lg-4 col-md-4">
+              <label for="mobilePhone" class="labelForUserProfile ">Mobile | <a href="#">Change</a> </label>
+              <input type="tel" name="mobilePhone" class="inputColumnUserProfile" value="+97798043355969" readonly>
+            </div>
+          </div>
+
+          <!-- 2.2) second row for (Birthday & Gender) -->
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <label for="birthday" class="labelForUserProfile ">Date Of Birth</label>
+              <input type="date" name="birthday" class="inputColumnUserProfile" value="" readonly>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <label for="gender" class="labelForUserProfile ">Gender</label>
+              <select name="gender" class="inputColumnUserProfile" style="color:rgb(0, 0, 0);" disabled>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 2.3) third row for (edit and change password button) -->
+          <div class="row buttons">
+            <div class="col-lg-9 col-md-9 col-4 text-right firstButton">
+              <button type="button" class="btn   btn-info editButton" name="button">EDIT</button>
+            </div>
+            <div class="col-lg-3 col-md-3 col-8 secondButton">
+              <button type="button" class="btn  btn-info changePasswordButton" name="button">CHANGE PASSWORD</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

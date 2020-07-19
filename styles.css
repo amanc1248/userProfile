@@ -1,0 +1,78 @@
+.container-fluid{
+  background-color: #EFF0F4;
+  height: 625px;
+  margin: 15% 0 15% 0;
+  padding: 2%;
+}
+
+/* 1st) Navigation-Bar-Division */
+.theNavbar{
+  font-size: 13px;
+  height: 575px;
+}
+.navbar{
+  width:100%;
+}
+.navbar-nav{
+  width: 100%;
+}
+ul{
+  list-style-type: none;
+  padding-left: 8px;
+}
+.subtab{
+  width: 100px;
+}
+
+/* 2nd) userInformationContainer  */
+.userInformationContainer{
+  border: 1px solid rgb(224, 227, 232);
+  box-shadow: 1px 1px 2px 2px rgb(240, 218, 229);
+  background-color: white;
+  padding:3%;
+
+}
+
+/* styling label */
+.labelForUserProfile{
+  color: darkgrey;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* styling input */
+.inputColumnUserProfile{
+  border: none;
+  margin-bottom: 25px;
+  width: 100%;
+}
+/* .editButton{
+  width: 16%;
+} */
+/* .changePasswordButton{
+  width: 100%;
+} */
+
+.buttons{
+  padding: 5% 0;
+}
+
+/* ADDING MEDIA QUERY FOR RESPONSIVENESS */
+ @media screen and (max-width:1000px)  {
+   .container-fluid{
+  padding: 0;
+}
+   .theNavbar{
+    height: auto;
+  }
+  .editButton, .changePasswordButton{
+    width: 100%;
+  }
+  .col-lg-9.col-md-9.col-4.text-right.firstButton{
+    padding-right: 4px;
+  }
+  .col-lg-3.col-md-3.col-8.secondButton{
+    padding-left: 4px;
+  }
+
+}
